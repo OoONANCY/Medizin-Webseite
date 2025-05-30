@@ -13,6 +13,78 @@
     <link rel="stylesheet" href="assets/css/plugins/magnifying-popup.css">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .single-pricing-area {
+            transition: all 0.3s ease;
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+            height: 100%;
+        }
+
+        .single-pricing-area:hover {
+            background: #007bff;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .single-pricing-area .pricing-head {
+            background: #f8f9fa;
+            transition: all 0.3s ease;
+        }
+
+        .single-pricing-area:hover .pricing-head {
+            background: #007bff;
+        }
+
+        .single-pricing-area:hover .pricing-head span,
+        .single-pricing-area:hover .pricing-head p,
+        .single-pricing-area:hover .price,
+        .single-pricing-area:hover .disc,
+        .single-pricing-area:hover .single-check span {
+            color: #ffffff;
+        }
+
+        .single-pricing-area .body {
+            transition: all 0.3s ease;
+        }
+
+        .single-pricing-area:hover .body {
+            background: #007bff;
+        }
+
+        .single-pricing-area:hover .rts-btn {
+            background: #ffffff;
+            color: #007bff;
+        }
+
+        .single-pricing-area.active {
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+        }
+
+        .single-pricing-area.active:hover {
+            background: #007bff;
+        }
+
+        .single-pricing-area.active:hover .pricing-head {
+            background: #007bff;
+        }
+
+        .single-pricing-area.active:hover .body {
+            background: #007bff;
+        }
+
+        /* Ensure all cards have same height and spacing */
+        .row.g-75 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .row.g-75>[class*='col-'] {
+            display: flex;
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 
 <body>
@@ -332,105 +404,136 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-area-center">
-                        <h2 class="title text-center wow move-right" style="font-size: 64px;">Our Pricing Best Plane
-                        </h2>
+                        <h2 class="title text-center wow move-right"
+                            style="font-size: 36px; line-height: 1.4; color: #333; margin-bottom: 20px;">At Medical, we
+                            believe quality healthcare access should be transparent and affordable.</h2>
+                        <p class="text-center" style="font-size: 20px; color: #666; margin-bottom: 40px;">Choose the
+                            service plan that fits your needs:</p>
                     </div>
                 </div>
             </div>
             <div class="row g-75 mt--0">
-                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s">
+                <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s">
                     <div class="single-pricing-area">
                         <div class="pricing-head">
-                            <span>Basic Plan</span>
-                            <h2 class="price">$29</h2>
-                            <p>per/month</p>
+                            <span>Bed Booking</span>
+                            <h2 class="price">Free</h2>
+                            <p>No Hidden Charges</p>
                         </div>
                         <div class="body">
                             <p class="disc">
-                                Ages16 - 24, Unlimited Play, Junior
-                                Golf Program
+                                Real-Time Bed Booking Service
                             </p>
                             <div class="single-check">
                                 <i class="fa-light fa-check"></i>
-                                <span>Echocardiogram</span>
+                                <span>Instant Access</span>
                             </div>
                             <div class="single-check">
                                 <i class="fa-light fa-check"></i>
-                                <span>Stress Testing</span>
+                                <span>Partner Hospitals</span>
                             </div>
                             <div class="single-check">
                                 <i class="fa-light fa-check"></i>
-                                <span>Cardiac Catheterization</span>
+                                <span>Real-time Availability</span>
                             </div>
                             <div class="single-check">
                                 <i class="fa-light fa-check"></i>
-                                <span>Angioplasty and Stenting</span>
+                                <span>No Hidden Charges</span>
                             </div>
-                            <a href="#" class="rts-btn btn-primary">booking Now</a>
+                            <a href="#" class="rts-btn btn-primary">Book Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".8s">
-                    <div class="single-pricing-area active">
+                <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s">
+                    <div class="single-pricing-area">
                         <div class="pricing-head">
-                            <span>Basic Plan</span>
-                            <h2 class="price">$66</h2>
-                            <p>per/month</p>
+                            <span>Doctor Consultation</span>
+                            <h2 class="price">₹500</h2>
+                            <p>per appointment</p>
                         </div>
                         <div class="body">
                             <p class="disc">
-                                30 Rounds per Month, Pro Shop
-                                Discount
+                                Professional Medical Consultation
                             </p>
                             <div class="single-check">
                                 <i class="fa-light fa-check"></i>
-                                <span>Echocardiogram</span>
+                                <span>Standard: ₹500</span>
                             </div>
                             <div class="single-check">
                                 <i class="fa-light fa-check"></i>
-                                <span>Stress Testing</span>
+                                <span>Specialist: ₹800</span>
                             </div>
                             <div class="single-check">
                                 <i class="fa-light fa-check"></i>
-                                <span>Cardiac Catheterization</span>
+                                <span>Verified Doctors</span>
                             </div>
                             <div class="single-check">
                                 <i class="fa-light fa-check"></i>
-                                <span>Angioplasty and Stenting</span>
+                                <span>Rescheduling Available</span>
                             </div>
-                            <a href="#" class="rts-btn btn-primary">booking Now</a>
+                            <a href="#" class="rts-btn btn-primary">Book Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".6s" data-wow-duration=".8s">
+                <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".6s" data-wow-duration=".8s">
                     <div class="single-pricing-area">
                         <div class="pricing-head">
-                            <span>Basic Plan</span>
-                            <h2 class="price">$29</h2>
-                            <p>per/month</p>
+                            <span>Video Consultation</span>
+                            <h2 class="price">₹400</h2>
+                            <p>per session</p>
                         </div>
                         <div class="body">
                             <p class="disc">
-                                Ages16 - 24, Unlimited Play, Junior
-                                Golf Program
+                                Secure Online Medical Consultation
                             </p>
                             <div class="single-check">
                                 <i class="fa-light fa-check"></i>
-                                <span>Echocardiogram</span>
+                                <span>Basic: ₹400</span>
                             </div>
                             <div class="single-check">
                                 <i class="fa-light fa-check"></i>
-                                <span>Stress Testing</span>
+                                <span>Extended: ₹700</span>
                             </div>
                             <div class="single-check">
                                 <i class="fa-light fa-check"></i>
-                                <span>Cardiac Catheterization</span>
+                                <span>Secure & Private</span>
                             </div>
                             <div class="single-check">
                                 <i class="fa-light fa-check"></i>
-                                <span>Angioplasty and Stenting</span>
+                                <span>Licensed Professionals</span>
                             </div>
-                            <a href="#" class="rts-btn btn-primary">booking Now</a>
+                            <a href="#" class="rts-btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".8s" data-wow-duration=".8s">
+                    <div class="single-pricing-area">
+                        <div class="pricing-head">
+                            <span>Ambulance Service</span>
+                            <h2 class="price">₹1,200</h2>
+                            <p>starting price</p>
+                        </div>
+                        <div class="body">
+                            <p class="disc">
+                                24/7 Emergency Ambulance Service
+                            </p>
+                            <div class="single-check">
+                                <i class="fa-light fa-check"></i>
+                                <span>Basic: ₹1,200</span>
+                            </div>
+                            <div class="single-check">
+                                <i class="fa-light fa-check"></i>
+                                <span>Inter-Hospital Transfer</span>
+                            </div>
+                            <div class="single-check">
+                                <i class="fa-light fa-check"></i>
+                                <span>Real-time Tracking</span>
+                            </div>
+                            <div class="single-check">
+                                <i class="fa-light fa-check"></i>
+                                <span>Certified Drivers</span>
+                            </div>
+                            <a href="#" class="rts-btn btn-primary">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -438,6 +541,23 @@
         </div>
     </div>
     <!-- pricing area end -->
+
+    <!-- request appoinment area start -->
+    <div class="request-appoinment-area rts-section-gapBottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="request-appoinemnt-area-main-wrapper bg_image rts-section-gap">
+                        <h2 class="title" style="font-size: 5px; line-height: 1.6; font-weight: 500; max-width: 700px; margin: 0 auto 25px;">
+                            <span>Contact us for tailored healthcare service packages for families or corporate needs.</span>
+                        </h2>
+                        <a href="contactus.html" class="rts-btn btn-primary">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- request appoinment area end -->
 
 
 
