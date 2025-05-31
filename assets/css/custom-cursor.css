@@ -1,0 +1,43 @@
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, background-color 0.3s;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.cursor-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.1s ease-out;
+}
+
+/* Hide default cursor */
+* {
+  cursor: none !important;
+}
+
+/* Cursor hover effects */
+a:hover ~ .custom-cursor,
+button:hover ~ .custom-cursor {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-secondary);
+}
+
+/* Ensure cursor is visible on all backgrounds */
+.custom-cursor,
+.cursor-dot {
+  mix-blend-mode: difference;
+} 
