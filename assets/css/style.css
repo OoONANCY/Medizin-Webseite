@@ -47,19 +47,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 :root {
-  --color-primary: #3867b5;
-  --color-secondary: #032457;
-  --color-body: #000000;
-  --color-heading: #032457;
-  --color-white: #fff;
-  --color-border: #c3dde8;
-  --color-accent: #f2f2f2;
-  --border-width: 1px;
-  --radius: 10px;
-  --color-success: #3EB75E;
-  --color-danger: #FF0003;
-  --color-warning: #FF8F3C;
-  --color-info: #1BA2DB;
+  --color-primary: #3867b5;    /* Trustworthy blue - primary brand color */
+  --color-secondary: #032457; /* Deep blue - strong, reliable headings */
+  --color-body: #000000;       /* Standard black for high-contrast body text */
+  --color-heading: #032457;    /* Same as secondary for consistent headings */
+  --color-white: #ffffff;      /* Clean background */
+  --color-border: #d1d5db;     /* Soft gray for borders, dividers */
+  --color-accent: #f2f2f2;     /* Light gray for section backgrounds */
+  --border-width: 1px;         /* Default border width */
+  --radius: 10px;              /* Rounded corners for friendly design */
+  
+  --color-success: #3e91b7;    /* Calm cyan-blue for success messages */
+  --color-danger: #FF0003;     /* Bright red for errors or alerts */
+  --color-warning: #FF8F3C;    /* Soft orange for warnings */
+  --color-info: #1BA2DB;  
   --p-light: 300;
   --p-regular: 400;
   --p-medium: 500;
@@ -14604,7 +14605,7 @@ Copyright (c) 2015 Daniel Eden
 .title-area-center .pre {
   border-radius: 30px;
   padding: 5px 16px;
-  color: #615EFC;
+  color: #74c2fb;
   margin-bottom: 30px;
   text-align: center;
   display: block;
@@ -17265,7 +17266,7 @@ header .rts-btn {
 }
 
 .bg-light {
-  background-color: #F1F1FF !important;
+  background-color: #c5e5fd !important;
   border-radius: 10px;
 }
 
@@ -17296,7 +17297,7 @@ header .rts-btn {
 }
 
 .single-service-area.style-bg-light {
-  background: #F1F1FF;
+  background: #86abca;
   border: 1px solid rgba(97, 94, 252, 0.2);
 }
 
@@ -17438,9 +17439,21 @@ header .rts-btn {
 }
 
 .single-service-six.bg-pink {
-  background: #FFCFC5;
+  background: #dceafa;
   border-radius: 10px;
 }
+
+.single-service-six.bg-lightgreen {
+  background: #eaf3fc;
+  border-radius: 10px;
+}
+
+.single-service-six.bg-lightblue {
+  background: #e3effb;
+  border-radius: 10px;
+}
+
+
 
 .single-service-six.bg-green {
   background: #ABFFB8;
@@ -17448,12 +17461,12 @@ header .rts-btn {
 }
 
 .single-service-six.bg-yello {
-  background: #FFEDAB;
+  background: #f0f7fe;
   border-radius: 10px;
 }
 
 .single-service-six.bg-sayan {
-  background: #E8E8FF;
+  background: #c5e5fd;
   border-radius: 10px;
 }
 
@@ -17923,7 +17936,7 @@ header .rts-btn {
 }
 
 .bg-light-1 {
-  background: #F8F8FF;
+  background: #a9def5;
 }
 
 .card-transparent-service .single-service-area {
@@ -18055,7 +18068,7 @@ header .rts-btn {
 .title-wrapper-left .pre {
   border-radius: 30px;
   padding: 5px 16px;
-  color: #615EFC;
+  color: #74c2fb;
   margin-bottom: 21px;
   display: block;
   max-width: max-content;
@@ -18340,7 +18353,7 @@ header .rts-btn {
 }
 
 .about-four-content-4 .small-image-right-side .counbter-about {
-  background: #615EFC;
+  background: #74c2fb;
   border-radius: 10px;
   padding: 10px 15px;
   margin-bottom: 15px;
@@ -18580,7 +18593,7 @@ header .rts-btn {
   position: absolute;
   left: -60px;
   bottom: -40px;
-  background: #615EFC;
+  background: #74c2fb;
   border-radius: 10px;
   padding: 19px 25px;
   width: 170px;
@@ -19287,7 +19300,7 @@ header .rts-btn {
 }
 
 .single-pricing-area.active {
-  background: #615EFC;
+  background: #74c2fb;
 }
 
 .single-pricing-area.active h2,
@@ -19335,7 +19348,7 @@ header .rts-btn {
 }
 
 .single-team-area-start.with-border .thumbnail {
-  border: 1px solid rgb(97, 94, 252);
+  border: 1px solid rgb(94, 152, 252);
 }
 
 .single-team-area-start .thumbnail {
@@ -19848,7 +19861,7 @@ header .rts-btn {
 }
 
 .tag-wrapper-small .single-tag:hover {
-  background: #615EFC;
+  background: #74c2fb;
   color: #fff;
 }
 
@@ -20363,7 +20376,7 @@ header .rts-btn {
   height: 50px;
   width: 50px;
   background: transparent;
-  border: 1px solid #615EFC;
+  border: 1px solid #74c2fb;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -20375,7 +20388,7 @@ header .rts-btn {
 
 .swiper-next-prev-controller .swiper-button-next i,
 .swiper-next-prev-controller .swiper-button-prev i {
-  color: #615EFC;
+  color: #74c2fb;
 }
 
 .swiper-next-prev-controller .swiper-button-next:hover,
@@ -20402,7 +20415,7 @@ header .rts-btn {
   height: 50px;
   width: 50px;
   background: transparent;
-  border: 1px solid #615EFC;
+  border: 1px solid #74c2fb;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -20424,7 +20437,7 @@ header .rts-btn {
 
 .button-dental-bwtween-area .swiper-button-next i,
 .button-dental-bwtween-area .swiper-button-prev i {
-  color: #615EFC;
+  color: #74c2fb;
   transition: 0.3s;
 }
 
@@ -21489,7 +21502,7 @@ li.has-dropdown:hover .submenu {
 
 @media only screen and (max-width: 1199px) {
   .single--testimonials-2 {
-    background-color: #615EFC;
+    background-color: #74c2fb;
     background-image: none;
   }
 }
@@ -21587,7 +21600,7 @@ li.has-dropdown:hover .submenu {
   height: 50px;
   width: 50px;
   background: transparent;
-  border: 1px solid #615EFC;
+  border: 1px solid #74c2fb;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -21609,7 +21622,7 @@ li.has-dropdown:hover .submenu {
 
 .rts-testimonials-area .title-between-area .swiper-button-next i,
 .rts-testimonials-area .title-between-area .swiper-button-prev i {
-  color: #615EFC;
+  color: #74c2fb;
   transition: 0.3s;
 }
 
@@ -21762,7 +21775,7 @@ li.has-dropdown:hover .submenu {
 }
 
 .single-lab-test.bg-light-card {
-  background: #E8E8FF;
+  background: #a9def5;
 }
 
 .single-lab-test .title {
@@ -22469,7 +22482,7 @@ li.has-dropdown:hover .submenu {
 }
 
 .footer-two {
-  background: #F1F1FF;
+  background: #c5e5fd;
 }
 
 .footer-two .footer-wrapper-style-between .single-wized .title {

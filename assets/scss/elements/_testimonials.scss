@@ -116,7 +116,7 @@
     border-radius: 40px;
 
     @media #{$smlg-device} {
-        background-color: #615EFC;
+        background-color: #74c2fb;
         background-image: none;
     }
 
@@ -204,7 +204,7 @@
             height: 50px;
             width: 50px;
             background: transparent;
-            border: 1px solid #615EFC;
+            border: 1px solid #74c2fb;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -220,7 +220,7 @@
             }
 
             i {
-                color: #615EFC;
+                color: #74c2fb;
                 transition: .3s;
             }
 
